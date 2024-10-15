@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Mental Health Survey</h1><hr>
+    <p id="description">This is a general template. For specific needs, it's recommended to consult with mental health professionals..</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+      <label id="name-label">Full Name <input type="text" id="name" placeholder="Full Name" required></label><br>
+      <label id="email-label">Email  <input type="email" id="email" placeholder="Email id" required></label><br>
+      <label id="number-label">Mobile No.  <input type="number" placeholder="Mobile No." id="number" min="10"  max="10" required></label><br>
+      <label id="age-label">Age(optional) <input type="number" placeholder="Age" id="age" maxlength="120"></label><br>
+      <label id="age-label">Ocupation  <input type="text" placeholder="Occupation" id="occupation" name="occupation"></label>
+      </fieldset>
+      <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="choice" value="male" class="inline" />
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="choice" value="female" class="inline" checked>
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="choice" value="other" class="inline">
+      <label for="other">Other</label><br>
+      </fieldset>
+      <fieldset>
+        <legend class="set1">General Mental Health</legend>
+        <label>1.)How would you rate your overall mental health?<br><input type="checkbox" name="choice1" value="rate"><input type="checkbox" value="rate" name="choice2" ><input type="checkbox" value="rate" name="choice3" ><input type="checkbox" value="rate" name="choice4" ><input type="checkbox" value="rate" name="choice5" ></label><br>
+        <label>2.)Do you have difficulty concentrating or making decisions</label><br>
+        <input type="radio" name="option1" value="yes"><label>Yes</label>
+        <input type="radio" name="option1" value="no"><label>No</label><br>
+        <label>3.)Do you have difficulty concentrating or making decisions?</label><br>
+        <input type="radio" value="yes" name="option2"><label>Yes</label>
+        <input type="radio" value="no" name="option2"><label>No</label><br>
+        <label>4.)How often do you feel overwhelmed or stressed?</label><br>
+        <input type="checkbox" value="mood"><label>Never</label>
+        <input type="checkbox" value="mood"><label>Rarely</label>
+        <input type="checkbox" value="mood"><label>Sometimes</label>
+        <input type="checkbox" value="mood"><label>Often</label>
+        <input type="checkbox" value="mood"><label>Always</label><br>
+        <label>5.)How would you describe your mood most of the time?</label><br>
+        <input type="checkbox" value="mood"><label>Excited</label>
+        <input type="checkbox" value="mood"><label>Happy</label>
+        <input type="checkbox" value="mood"><label>Neutral</label>
+        <input type="checkbox" value="mood"><label>Sad</label>
+        <input type="checkbox" value="mood"><label>Frustrated</label>
+        <input type="checkbox" value="mood"><label>Anxious</label>
+        </fieldset>
+        <fieldset>
+          <legend class="set2">Sleep Pattern</legend>
+          <label>1.)Do you have difficulty falling asleep or staying asleep?</label><br>
+        <input type="radio" name="option3" value="yes"><label>Yes</label>
+        <input type="radio" value="no" name="option3"> <label>No</label><br>
+        <label>2.)Do you experience frequent nightmares or disturbed sleep?</label><br>
+        <input type="radio" name="option" value="yes"><label>Yes</label>
+        <input type="radio" value="no" name="option"><label>No</label><br>
+        <label>3.)How many hours of sleep do you get per night on average?</label><br>
+        <input type="checkbox" value="mood"><label><7 hours</label>
+        <input type="checkbox" value="mood"><label>7-8 hours</label>
+        <input type="checkbox" value="mood"><label>8-9 hours</label>
+        <input type="checkbox" value="mood"><label>9-10 hours</label>
+        <input type="checkbox" value="mood"><label>Not Fixed</label><br>
+        </fieldset>
+        <fieldset>
+        <legend class="set3">Social and Relationship Issues</legend>
+        <label>1.)Do you feel lonely or isolated?</label><br>
+        <input type="radio" value="yes" name="option2"><label>Yes</label>
+        <input type="radio" value="no" name="option2"><label>No</label><br>
+        2.)Do you feel comfortable attending social gatherings??</label><br>
+        <input type="radio" value="yes" name="option2"><label>Yes</label>
+        <input type="radio" value="no" name="option2"><label>No</label><br>
+         <label>3.)How would you describe your relationships with friends and family?</label><br>
+        <input type="checkbox" value="mood"><label>Very Close</label>
+        <input type="checkbox" value="mood"><label>Close</label>
+        <input type="checkbox" value="mood"><label>Somewhat Close</label>
+        <input type="checkbox" value="mood"><label>Distant</label>
+        <input type="checkbox" value="mood"><label>Very Distant</label><br>
+        </fieldset>
+        <fieldset>
+        <legend class="set4">Appetite and Weight</legend>
+        <label>1.)Have you experienced changes in your appetite or weight recently?</label><br>
+        <input type="radio" value="yes" name="option2"><label>Yes</label>
+        <input type="radio" value="no" name="option2"><label>No</label><br>
+        <label>2.)Do you feel good about your body shape?</label><br>
+        <input type="radio" value="yes" name="option2"><label>Yes</label>
+        <input type="radio" value="no" name="option2"><label>No</label><br>
+        </fieldset>
+        <fieldset>
+          <legend>What kind of support would be helpful to you?</legend>
+            <select id="dropdown">
+              <option value="">Select</option>
+              <option>More information about mental health conditions</option>
+              <option>Stress management techniques</option>
+              <option>Time management strategies</option>
+              <option>Practical advice for managing symptoms</option>
+              <option>Access to mental health professionals</option>
+              </select>
+              </fieldset>
+              <fieldset>
+        <legend for="answer">Is there anything else you would like to share about your mental health?</legend>
+          <textarea id="answer" name="answer" row="5" cols="35" placeholder="I would like to share that..." ></textarea>
+        </label>
+        
+
+      <label for="submit"></label>
+      <input type="submit" id="submit">
+      
+      
